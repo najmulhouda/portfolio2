@@ -7,7 +7,8 @@
 } 
 body{
     font-family: Arial, Helvetica, sans-serif ;
-    background-color: rgb(71, 201, 194);
+    background-color: white;
+    
 }
 nav{
     background: rgb(95, 14, 224);
@@ -61,6 +62,7 @@ a.active,a:hover{
     nav ul li a{
         font-size: 16px;
     }
+   
 }
 
 @media (max-width: 858px){
@@ -79,7 +81,7 @@ a.active,a:hover{
     }
     nav ul li{
         display: block;
-        margin: 50px;
+        margin: 50px 0px;
         line-height: 30px;
     }
     nav ul li a{
@@ -94,5 +96,61 @@ a.active,a:hover{
     }
 
 }
+.first-s{
+    display: flex;
+    margin-bottom: 50px;
+}
+.half-d{
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+.half-d img{
+    width: 90%;
+}
+h1{
+    font-size: 70px;
+}
 
+.st{
+    display: inline-flex;
+}
+.st .st2{
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: 400;
+}
+.st3 li{
+    margin-top: 60px;
+    font-size:50px ;
+    font-weight: 400;
+    margin-left: 18px;
+    color: blue;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
 
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+.st .st3{
+    margin-left: 10px;
+    overflow: hidden;
+    
+}
+.st3 li span{
+    position: relative;
+}
+.st3 li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid black;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+}
